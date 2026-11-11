@@ -1,0 +1,163 @@
+
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 8%;
+    box-sizing: border-box;
+    background: #0b0b1e;
+    color: white;
+}
+
+.contacttitle {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contactdesc {
+    text-align: center;
+    color: #aaaabd;
+    margin-bottom: 55px;
+    font-size: 15px;
+}
+
+.contactcontainer {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 45px;
+}
+
+/* Left Side */
+
+.contactinfo h2,
+.contactform h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #6978ff;
+}
+
+.contactinfo > p {
+    color: #b5b5c5;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contactitem {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+    background: #17172d;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #29294a;
+}
+
+.contactitem > span {
+    font-size: 25px;
+}
+
+.contactitem h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contactitem p {
+    color: #aaaabd;
+    font-size: 14px;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+    color: white;
+    background: #5865f2;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.sociallinks a:hover {
+    background: #414bd0;
+}
+
+/* Right Side */
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 30px;
+    background: #17172d;
+    border: 1px solid #29294a;
+    border-radius: 15px;
+}
+
+.contactform input,
+.contactform textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #0b0b1e;
+    border: 1px solid #353550;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+    border-color: #6978ff;
+}
+
+.contactform textarea {
+    resize: vertical;
+}
+
+.contactform button {
+    padding: 14px;
+    background: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactform button:hover {
+    background: #414bd0;
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 850px) {
+    .contactcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        padding: 60px 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contacttitle {
+        font-size: 30px;
+    }
+
+    .contactform {
+        padding: 20px;
+    }
+}

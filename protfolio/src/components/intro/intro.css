@@ -1,0 +1,214 @@
+
+/* Main Intro Section */
+#intro {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 100px 6%;
+    box-sizing: border-box;
+
+    background: linear-gradient(135deg, #07152e, #102e60);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Left Content */
+.introcontent {
+    flex: 1;
+    max-width: 600px;
+    min-width: 0;
+    z-index: 1;
+}
+
+.hello {
+    font-size: clamp(20px, 2vw, 30px);
+    font-weight: 500;
+    color: white;
+}
+
+.introtext {
+    font-size: clamp(32px, 4vw, 58px);
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    margin: 15px 0;
+    overflow-wrap: break-word;
+}
+
+.introname {
+    color: #159cff;
+}
+
+.paraname {
+    color: #ddd;
+    font-size: clamp(15px, 1.2vw, 19px);
+    margin: 20px 0 30px;
+    line-height: 1.7;
+}
+
+/* Hire Me Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+
+    background: #159cff;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.btn:hover {
+    background: white;
+    color: #159cff;
+    transform: translateY(-3px);
+}
+
+/* Right Image */
+.introimage {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+/* Laptop */
+@media screen and (max-width: 1200px) {
+    #intro {
+        gap: 30px;
+        padding: 90px 4%;
+    }
+
+    .introtext {
+        font-size: clamp(32px, 4vw, 48px);
+    }
+
+    .bg {
+        max-width: 430px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    #intro {
+        min-height: auto;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 110px 25px 50px;
+        gap: 35px;
+    }
+
+    .introcontent {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .introtext {
+        font-size: clamp(30px, 6vw, 42px);
+    }
+
+    .paraname {
+        font-size: 16px;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .introimage {
+        width: 100%;
+    }
+
+    .bg {
+        max-width: 400px;
+        max-height: 450px;
+    }
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 480px) {
+    #intro {
+        padding: 100px 18px 35px;
+        gap: 25px;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .introtext {
+        font-size: 32px;
+        line-height: 1.25;
+        margin: 12px 0;
+    }
+
+    .paraname {
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 15px 0 25px;
+    }
+
+    .btn {
+        padding: 11px 22px;
+        font-size: 14px;
+    }
+
+    .bg {
+        width: 100%;
+        max-width: 320px;
+        max-height: 350px;
+    }
+}
+
+/* Extra Small Phone */
+@media screen and (max-width: 360px) {
+    .introtext {
+        font-size: 27px;
+    }
+
+    .hello {
+        font-size: 18px;
+    }
+
+    .paraname {
+        font-size: 14px;
+    }
+
+    .bg {
+        max-width: 280px;
+    }
+}
