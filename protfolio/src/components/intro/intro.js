@@ -15,7 +15,7 @@ export const Intro = () => {
         <h1 className="introtext">
           I am <span className="introname">Rohit Kumar</span>
           <br />
-          Web Developer
+          Java Full Stack Devloper
         </h1>
 
         <p className="paraname">
