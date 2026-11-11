@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/logo.png';
-import contactimg from '../../src/assets/contact.png';
 import insta from '../../src/assets/instagram.png';
 
 import './navbar.css';
